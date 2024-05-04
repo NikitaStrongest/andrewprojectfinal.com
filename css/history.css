@@ -1,0 +1,252 @@
+@media screen and (min-width: 1440px) and (min-height: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+header {/* header */
+
+    position:absolute;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    
+
+    z-index: 9999
+
+    }
+    .navbar {
+        background-color: #5b0b0bac;
+        padding: 20px;
+        filter: drop-shadow(1px, 2px, 10px, #ca7b7b00);
+      }
+      
+      .nav-list {
+        font-size: 17px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
+      .nav-list li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      
+      .nav-list li:last-child {
+        margin-right: 0;
+      }
+      
+      .nav-list li a {
+        font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: background-color 0.4s ease-in;
+    }
+      
+      .nav-list li a:hover {
+        background-color: #030303;
+
+      }
+    
+
+    .head {
+        /* История Киноиндустрии */
+        position: absolute;
+        width: 673px;
+        height: 92px;
+        left: 429px;
+        top: 132px;
+    
+        font-family: 'Anonymous Pro', sans-serif; /* Установка шрифта */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 52px;
+    
+        color: #ffffff; /* Установка белого цвета текста */
+        
+        /* Добавление тени */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+        /* Плавное смещение при наведении */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .head:hover {
+        transform: translate(2px, 2px); /* Сдвигаем текст на 2px вправо и вниз при наведении */
+    }
+    
+    
+.line {
+    border-radius: 10px;
+    color: #c12424;
+    ;
+}
+.past {
+    float: left; /* Фото выравнивается слева */
+    margin-right: 20px;
+}
+.main {
+position: absolute;
+width: 80%;
+height: auto;
+margin-left: 100px;
+margin-top: 250px;
+margin-bottom: 50px;
+color: #ffffff;
+
+}
+
+
+.exampleClass {
+    height: 100px;
+    width: 100px;;
+    color: black;
+    transition: transform 0.15s;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    bottom: 5%; /* Отступ от нижнего края */
+    right: 2%;
+}
+
+.exampleClass::after {
+    content: '';
+    background-color: white;
+    transition: transform 0.15s;
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    align-items: center;
+    align-content: center;
+}
+.exampleClass img {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+   
+.exampleClass:hover::after {
+    transform: scale(1.1);
+}
+
+.exampleClass:active {
+    transform: scale(0.9);
+}
+
+
+
+.main p{
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+    font-size: 16px; /* Устанавливаем размер шрифта */
+    color: #ffecec; /* Устанавливаем цвет текста */
+    line-height: 1.6; /* Устанавливаем высоту строки */
+    margin-left: 0; /* Убираем внешние отступы */
+    padding: 25px; /* Устанавливаем внутренние отступы */
+    background-color: rgba(41, 39, 39, 0.4); /* Устанавливаем цвет фона с прозрачностью */
+    border-radius: 10px; /* Устанавливаем радиус скругления углов */
+    box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.441);
+}
+.main h1{
+
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 48px; /* Размер шрифта */
+    color: rgb(133, 8, 8); /* Белый цвет текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-top: 50px; /* Отступ сверху */
+}
+
+.novigation {
+    position:fixed;
+    width: 319px;
+    height: 384px;
+    right: -330px;
+    top: 150px;
+    background: rgb(26, 26, 26);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 57px;
+    align-items: center;
+    padding: 20px;
+    align-content: center;
+    transition: right 0.4s ease-in-out;
+    text-align: left; /* Выравнивание текста по левому краю */
+    font-family: 'Anonymous Pro', sans-serif; /* Установка шрифта */
+}
+
+.novigation:hover {
+    right: 0px; /* Сдвигаем текст на 2px вправо и вниз при наведении */
+    color: #c12424;
+}
+
+
+.novigation h2 {
+    
+    font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";
+    text-align: center; /* Выравнивание текста по центру */
+    overflow: hidden; /* Скрытие текста, выходящего за границы */
+    white-space: nowrap; /* Запрет переноса строк */
+    text-overflow: ellipsis; /* Замена выходящего за границы текста на многоточие */
+    margin: 0; /* Убираем внешние отступы */
+    margin-top: 30px; /* Отступ сверху */
+    margin-left: 15px;
+    margin-bottom: 1px;
+    text-shadow: 2px 2px 10px rgba(22, 22, 22, 0.5);
+    font-size: 26px;
+}
+
+
+
+
+
+.custom-list {
+    list-style-type: disc; /* Устанавливаем стиль маркера */
+    margin-left: 40px; /* Отступ слева для выравнивания */
+    padding-left: 0; /* Убираем внутренний отступ слева */
+    margin-top: 30px; /* Добавляем отступ сверху */
+    float: right;
+}
+
+.custom-list li {
+    font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";
+    font-size: 1x; /* Размер шрифта */
+    color: white; /* Белый цвет текста */
+    margin-bottom: 5px; /* Уменьшаем отступ снизу между пунктами */
+    line-height: 1.6; /* Высота строки */
+}
+
+.custom-list li::marker {
+    font-size: 24px; /* Увеличиваем размер маркера */
+}
+.custom-list a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: white; /* Устанавливаем изначальный цвет текста ссылок */
+    font-weight: normal; /* Сбрасываем начальное значение жирности текста */
+}
+
+.custom-list a:hover {
+    font-weight: bold; /* Делаем текст жирным при наведении */
+}
+.photomain {
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0);;
+    float: right;
+    border-radius: 10px;
+    width: 500px;
+    height: auto;
+    margin: 15px;
+}
+
+body {
+
+        background-color: #0d0c0c;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: lighten;
+    }
+    
