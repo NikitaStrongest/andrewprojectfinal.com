@@ -1897,7 +1897,7 @@ h6 {
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .nav-list {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .nav-list li {
@@ -1905,7 +1905,7 @@ h6 {
     }
 
     .nav-list li a {
-        font-size: 16px;
+        font-size: 20px;
         padding: 8px 16px;
     }
 }
@@ -1916,4 +1916,6 @@ h6 {
         padding: 6px 12px;
     }
 }
+ 
+
 
