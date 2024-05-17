@@ -1896,26 +1896,25 @@ h6 {
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
-    .nav-list {
-        flex-direction: row;
-    }
-    
-    .nav-list li {
-        margin: 5px 0;
-    }
+		.nav-list {
+			flex-direction: row;
+		}
+		
+		.nav-list li {
+			margin: 5px 0;
+		}
 
-    .nav-list li a {
-        font-size: 20px;
-        padding: 8px 16px;
-    }
-}
+		.nav-list li a {
+			font-size: 20px;
+			padding: 8px
+		}
+	}
 
-@media (max-width: 480px) {
-    .nav-list li a {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-}
+	@media (max-width: 480px) {
+		.nav-list li a {
+			font-size: 14px;
+			padding: 6px 12px;
+		}
  
 
 
