@@ -433,7 +433,7 @@ header {/* header */
         font-family:  "Helvetica Neue", "Arial", "Roboto","Open Sans";
     }
     .navbar {
-        background-color: #5b0b0bac;
+        background-color: #5b0b0b;
         padding: 20px;
         filter: drop-shadow(1px, 2px, 10px, #ca7b7b00);
       }
@@ -447,9 +447,11 @@ header {/* header */
       }
       
       .nav-list li {
-        display: inline-block;
+        display:inline-flex;
+		flex-wrap: wrap;
         margin-right: 20px;
       }
+      
       
       .nav-list li:last-child {
         margin-right: 0;
