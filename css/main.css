@@ -2334,7 +2334,7 @@ footer ul li {
     border-radius: 100px;
     color: #fff !important;
     transition: all 200ms ease-in-out;
-	font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";s
+	font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";
 }
 
 .btn:hover {
@@ -2352,9 +2352,8 @@ header {/* header */
     z-index: 9999
 
     }
-    h6 {
-        font-family:  "Helvetica Neue", "Arial", "Roboto","Open Sans";
-    }
+    
+    
     .navbar {
         background-color: #5b0b0bac;
         padding: 20px;
