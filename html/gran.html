@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Andrew CP</a></li>
+              <li><a href="../html/companies.html" target="_blank">Кинокомпании</a></li>
+              <li><a href="../html/films.html">Фильмы</a></li>
+              <li><a href="../html/history.html" target="_blank">История кино</a></li>
+            </ul>
+          </nav>
+    
+    
+    </header>
 
     <div class="container">
         <div class="wrapper">
@@ -30,7 +43,20 @@
                 <div class="mb-40">
                     <a href="https://rezka.ag/films/fiction/1706-gran-buduschego-2014.html" class="btn">Смотреть</a>
                 </div>
-                <!-- /.mb-40 -->
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                      <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/d705d540-85a4-4e84-a282-c229d01762bf/1920x" alt="0"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10893610/1f802b10-32e4-450e-b155-76c12fb7923b/1920x" alt="1"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/2d336f3c-7dec-4d8d-8c68-f3e16d83d717/1920x" alt="2"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/10809116/14617404-1006-46e1-bf12-c3f952b7cb25/1920x" alt="3"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/9a631a80-1d5c-4183-9697-7cdc3c093ddd/1920x" alt="4"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/21d59f66-8905-4614-bb1e-2da77270bb8d/1920x" alt="5"></li>
+                    </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                  </div>
 
                 <ul class="params mb-40">
                     <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
@@ -61,7 +87,27 @@
         </div>
         <!-- /.wrapper -->
     </div>
-    <!-- /.container -->
+    <div class="container">
+        <form id="feedbackForm">
+            <h2>Оставить отзыв</h2>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="feedbackMessages">
+            <!-- Здесь будут отображаться сохраненные отзывы -->
+        </div>
+    </div>
+    
+    <script src="../js/jsfilms.js"> 
+    </script>
     
 </body>
 </html>

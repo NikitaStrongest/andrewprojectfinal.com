@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Andrew CP</a></li>
+              <li><a href="../html/companies.html" target="_blank">Кинокомпании</a></li>
+              <li><a href="../html/films.html">Фильмы</a></li>
+              <li><a href="../html/history.html" target="_blank">История кино</a></li>
+            </ul>
+          </nav>
+    
+    
+    </header>
 
     <div class="container">
         <div class="wrapper">
@@ -30,7 +43,15 @@
                 <div class="mb-40">
                     <a href="https://rezka.ag/films/drama/19317-lyubov-2015.html" class="btn">Смотреть</a>
                 </div>
-                <!-- /.mb-40 -->
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                      <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>
+                      <li class="sim-slider-element"><img src="https://www.interfax.ru/aspimg/467613.jpg" alt="0"></li>
+                      </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                  </div>
 
                 <ul class="params mb-40">
                     <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
@@ -60,7 +81,27 @@
         </div>
         <!-- /.wrapper -->
     </div>
-    <!-- /.container -->
+    <div class="container">
+        <form id="feedbackForm">
+            <h2>Оставить отзыв</h2>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="feedbackMessages">
+            <!-- Здесь будут отображаться сохраненные отзывы -->
+        </div>
+    </div>
+    
+    <script src="../js/jsfilms.js"> 
+    </script>
     
 </body>
 </html>

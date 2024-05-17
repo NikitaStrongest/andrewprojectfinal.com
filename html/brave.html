@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Andrew CP</a></li>
+              <li><a href="../html/companies.html" target="_blank">Кинокомпании</a></li>
+              <li><a href="../html/films.html">Фильмы</a></li>
+              <li><a href="../html/history.html" target="_blank">История кино</a></li>
+            </ul>
+          </nav>
+    
+    
+    </header>
 
     <div class="container">
         <div class="wrapper">
@@ -30,7 +43,19 @@
                 <div class="mb-40">
                     <a href="https://rezka.ag/cartoons/fantasy/175-hrabraya-serdcem-2012.html" class="btn">Смотреть</a>
                 </div>
-                <!-- /.mb-40 -->
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                      <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+                      <li class="sim-slider-element"><img src="https://images-s.kinorium.com/movie/shot/445341/w1500_41586473.jpg" alt="0"></li>
+                      <li class="sim-slider-element"><img src="https://th.bing.com/th/id/R.87a4ad678cb2eb7ad9de8e4d2b638a9f?rik=Hqa6Az%2bV5W5ffQ&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f33500000%2fmerida-with-black-highlights-disney-princess-33593169-580-414.jpg&ehk=NgGQlkTbYLAIsxnmeKpUvpX0B64Kz2SmYPlPnP1b6HI%3d&risl=&pid=ImgRaw&r=0" alt="1"></li>
+                      <li class="sim-slider-element"><img src="https://i.pinimg.com/originals/4c/79/2b/4c792b9d159ec2b607cf777f86d93f71.jpg" alt="2"></li>
+                      <li class="sim-slider-element"><img src="https://www.wallofcelebrities.com/celebrity/peigi-barker/pictures/original/peigi-barker_2673667.jpg" alt="3"></li>
+                      
+                    </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                  </div>
 
                 <ul class="params mb-40">
                     <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
@@ -61,7 +86,27 @@
         </div>
         <!-- /.wrapper -->
     </div>
-    <!-- /.container -->
+    <div class="container">
+        <form id="feedbackForm">
+            <h2>Оставить отзыв</h2>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="feedbackMessages">
+            <!-- Здесь будут отображаться сохраненные отзывы -->
+        </div>
+    </div>
+    
+    <script src="../js/jsfilms.js"> 
+    </script>
     
 </body>
 </html>

@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Andrew CP</a></li>
+              <li><a href="../html/companies.html" target="_blank">Кинокомпании</a></li>
+              <li><a href="../html/films.html">Фильмы</a></li>
+              <li><a href="../html/history.html" target="_blank">История кино</a></li>
+            </ul>
+          </nav>
+    
+    
+    </header>
 
     <div class="container">
         <div class="wrapper">
@@ -34,7 +47,20 @@
                 <div class="mb-40">
                     <a href="https://rezka.ag/films/action/770-nachalo-2010.html" class="btn">Смотреть</a>
                 </div>
-                <!-- /.mb-40 -->
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                      <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/b6dd5c6f-9907-4eaf-a6c4-34191b5ae04e/1920x" alt="0"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/eb784633-8800-426c-99e1-307dff620dfc/1920x" alt="1"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/8508b991-a345-41d2-a213-4f322e93ce42/1920x" alt="2"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/fcff1646-6294-48ea-b8d6-9be7429bd3c4/1920x" alt="3"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/56cd560e-88cb-4464-b45f-1de1f4cb68c1/1920x" alt="4"></li>
+                      <li class="sim-slider-element"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/70a3871e-e58c-4ad5-8cca-3d1f5dc138a0/1920x" alt="5"></li>
+                    </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                  </div>
 
                 <ul class="params mb-40">
                     <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
@@ -64,7 +90,26 @@
         </div>
         <!-- /.wrapper -->
     </div>
-    <!-- /.container -->
+    <div class="container">
+        <form id="feedbackForm">
+            <h2>Оставить отзыв</h2>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="feedbackMessages">
+            <!-- Здесь будут отображаться сохраненные отзывы -->
+        </div>
+    </div>
     
+    <script src="../js/jsfilms.js"> 
+    </script>
 </body>
 </html>

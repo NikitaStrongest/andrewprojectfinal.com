@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header  id="main">
+
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="index.html">Andrew CP</a></li>
+              <li><a href="../html/companies.html" target="_blank">Кинокомпании</a></li>
+              <li><a href="../html/films.html">Фильмы</a></li>
+              <li><a href="../html/history.html" target="_blank">История кино</a></li>
+            </ul>
+          </nav>
+    
+    
+    </header>
 
     <div class="container">
         <div class="wrapper">
@@ -30,7 +43,21 @@
                 <div class="mb-40">
                     <a href="https://rezka.ag/cartoons/fantasy/35959-dusha-2020.html" class="btn">Смотреть</a>
                 </div>
-                <!-- /.mb-40 -->
+                <div class="sim-slider">
+                    <ul class="sim-slider-list">
+                      <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>
+                      <li class="sim-slider-element"><img src="https://www.kinonews.ru/insimgs/2023/artimg/middle/artimg118725.webp" alt="0"></li>
+                      <li class="sim-slider-element"><img src="https://aif-s3.aif.ru/images/022/567/9187bf6effea215d8274b20b58f5d934.jpg" alt="1"></li>
+                      <li class="sim-slider-element"><img src="https://api.kinoart.ru/storage/post/block/image/5589/image-9d8d694ae7e6c223c00b644e1cb1239d.jpg" alt="2"></li>
+                      <li class="sim-slider-element"><img src="https://img01.rl0.ru/afisha/e780x-i/daily.afisha.ru/uploads/images/0/de/0de6c1302a301618a9ce100d6548a2e0.jpg" alt="3"></li>
+                      <li class="sim-slider-element"><img src="https://thecity.m24.ru/b/d/SYketSiveoE9LvLObLLBFlFNHBpuaXnwmJxNbycGshjv55OD3HWFWh2pL8EsPwl5DpSHzm95vRzNbdeHauL5EWcJ5w9e=ttZFNLaJoe7M6RMUx7jIGQ.jpg" alt="4"></li>
+                      <li class="sim-slider-element"><img src="https://dn1.vtomske.ru/a/1beed55a800b5758187277e3eb5617c4_lgda5bfd.jpg" alt="5"></li>
+                    </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                  </div>
+
 
                 <ul class="params mb-40">
                     <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
@@ -62,7 +89,27 @@
         </div>
         <!-- /.wrapper -->
     </div>
-    <!-- /.container -->
+    <div class="container">
+        <form id="feedbackForm">
+            <h2>Оставить отзыв</h2>
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Комментарий:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="feedbackMessages">
+            <!-- Здесь будут отображаться сохраненные отзывы -->
+        </div>
+    </div>
+    
+    <script src="../js/jsfilms.js"> 
+    </script>
     
 </body>
 </html>

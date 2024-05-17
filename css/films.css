@@ -75,7 +75,7 @@ header {/* header */
     
     /* Остальные стили */
     .movie {
-        width: 80%;
+        width: 95%;
         background-color: #e6d9d9;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -98,8 +98,8 @@ header {/* header */
     
     
     .movie img {
-        width: auto;
-        height: 300px;
+        width: 180px;
+        height: auto;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         margin-right: 10px;
@@ -112,7 +112,7 @@ header {/* header */
     }
     
     .movie p {
-        margin: 0 15px 15px;
+        padding: 1px;
         font-size: 18px;
         color: #000000;
         border-left: 2px solid black;
@@ -161,7 +161,7 @@ header {/* header */
     
     .mainheader {
         color: #d30404;
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 50px;
         font-family: "Helvetica Neue", "Arial", "Roboto","Open Sans";
         margin-bottom: 2px;
