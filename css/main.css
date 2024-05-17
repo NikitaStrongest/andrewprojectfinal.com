@@ -1900,21 +1900,20 @@ h6 {
 			flex-direction: row;
 		}
 		
-		.nav-list li {
-			margin: 5px 0;
-		}
+		
+		
 
 		.nav-list li a {
-			font-size: 20px;
-			padding: 8px
+			font-size: 25px;
+			
 		}
 	}
 
 	@media (max-width: 480px) {
 		.nav-list li a {
 			font-size: 14px;
-			padding: 6px 12px;
+			
 		}
- 
-
+	}
+	
 
